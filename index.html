@@ -3,49 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yakerson Ltd - IT Services</title>
+  <title>Yakerson - IT Services</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- HEADER -->
   <header>
-    <h1>Yakerson Ltd</h1>
-    <p>Professional IT Services & Consulting</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container header-content">
+      <img src="images/logo.png" alt="Yakerson Ltd Logo" class="logo">
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="about">
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Yakerson</h1>
+      <p>Professional IT Services & Consulting for your business success</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="content-section">
     <h2>About Us</h2>
     <p>
-      Yakerson Ltd is a trusted IT services provider, delivering reliable solutions for businesses.  
+      Yakerson is a trusted IT services provider, delivering reliable solutions for businesses.  
       With years of experience in system integration, cloud solutions, networking, and IT security,  
       we help companies streamline operations and achieve efficiency.
     </p>
   </section>
 
-  <section id="services">
+  <!-- SERVICES -->
+  <section id="services" class="content-section">
     <h2>Our Services</h2>
-    <ul>
-      <li>IT Consulting & Strategy</li>
-      <li>Network Design & Support</li>
-      <li>Cloud Infrastructure & Migrations</li>
-      <li>Cybersecurity Solutions</li>
-      <li>System Administration & Maintenance</li>
-    </ul>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>IT Consulting</h3>
+        <p>Strategic planning and advisory to align IT with your business goals.</p>
+      </div>
+      <div class="service-card">
+        <h3>Networking</h3>
+        <p>Design, setup, and management of secure and reliable networks.</p>
+      </div>
+      <div class="service-card">
+        <h3>Cloud Solutions</h3>
+        <p>Migrations and management of scalable cloud infrastructures.</p>
+      </div>
+      <div class="service-card">
+        <h3>Cybersecurity</h3>
+        <p>Protecting your business with advanced security solutions.</p>
+      </div>
+      <div class="service-card">
+        <h3>System Administration</h3>
+        <p>Reliable maintenance and support for your IT infrastructure.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
+  <!-- CONTACT -->
+  <section id="contact" class="content-section">
     <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:info@yakerson.com">info@yakerson.com</a></p>
-    <p>Phone: +972-XX-XXXXXXX</p>
+    <p>Email: <a href="mailto:info@yakerson.co.il">info@yakerson.co.il</a></p>
+    <p>Phone: +972-54-4446699</p>
     <p>Address: Tel Aviv, Israel</p>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <p>&copy; 2025 Yakerson Ltd. All rights reserved.</p>
   </footer>
 </body>
 </html>
+
