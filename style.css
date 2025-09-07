@@ -47,7 +47,7 @@ nav a:hover {
 /* Hero Section */
 .hero {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-              url('https://source.unsplash.com/1600x600/?technology,computer') no-repeat center center/cover;
+              url('images/hero-bg.png') no-repeat center center/cover;
   color: white;
   text-align: center;
   padding: 5rem 2rem;
