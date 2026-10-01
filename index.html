@@ -64,34 +64,28 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
+ <!-- CONTACT -->
 <section id="contact" class="content-section">
   <h2>Contact Us</h2>
+  <p>Email: <span id="email-placeholder"></span></p>
   <p>Address: Tel Aviv, Israel</p>
-
-  <!-- Contact Form -->
-  <form action="send-email.php" method="POST" class="contact-form">
-    <div class="form-group">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-    </div>
-    
-    <div class="form-group">
-      <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    
-    <div class="form-group">
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-    </div>
-
-    <!-- Honeypot field (hidden from humans, catches automated bots) -->
-    <input type="text" name="honeypot" style="display:none !important" tabindex="-1" autocomplete="off">
-    
-    <button type="submit">Send Message</button>
-  </form>
 </section>
+
+<script>
+  (function() {
+    // Splits the email into parts to hide it from bots scanning raw HTML
+    var user = "info";
+    var domain = "yakerson.co.il";
+    var fullEmail = user + "@" + domain;
+    
+    // Dynamically builds and injects the clickable link
+    var emailLink = document.createElement("a");
+    emailLink.href = "mailto:" + fullEmail;
+    emailLink.innerText = fullEmail;
+    
+    document.getElementById("email-placeholder").appendChild(emailLink);
+  })();
+</script>
 
   <!-- FOOTER -->
   <footer>
